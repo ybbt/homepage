@@ -3,20 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <title>Résumé</title>
+    <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+      @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+      body{
+        font-family: 'Comic Neue', cursive;
+      }
+      ::-moz-selection {
+        background: greenyellow;
+      }
+      ::selection {
+        background: greenyellow;
+      }
+      .avatar{
+        width: 100%;
+      }
+      .name, h3{
+        color: darkgreen;
+      }
+      .name:hover{
+        text-shadow: 2px 2px 2px lightgreen, 0 0 1em lightseagreen;
+      }
+      footer{
+        background: #111;
+        color: #111;
+        font-family: "Open Sans",  Impact;
+      }
+      footer:hover .footer_text {
+        text-align: center;
+        font-size: 6.5em;
+        color: #fff;
+        letter-spacing: -7px;
+        font-weight: 700;
+        text-transform: uppercase;
+        animation: blur .75s ease-out infinite;
+        text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+      }
+
+      @keyframes blur {
+        from {
+          text-shadow:0px 0px 10px #fff,
+            0px 0px 10px #fff, 
+            0px 0px 25px #fff,
+            0px 0px 25px #fff,
+            0px 0px 25px #fff,
+            0px 0px 25px #fff,
+            0px 0px 25px #fff,
+            0px 0px 25px #fff,
+            0px 0px 50px #fff,
+            0px 0px 50px #fff,
+            0px 0px 50px #7B96B8,
+            0px 0px 150px #7B96B8,
+            0px 10px 100px #7B96B8,
+            0px 10px 100px #7B96B8,
+            0px 10px 100px #7B96B8,
+            0px 10px 100px #7B96B8,
+            0px -10px 100px #7B96B8,
+            0px -10px 100px #7B96B8;
+        }
+      }      
+    </style>
   </head>
   <body>
+    <header>
+      <div class="credits"><strong>For <a href="https://academy.binary-studio.com/ua/">Binary Studio Academy</a></strong></div>
+    </header>
     <main>
       <article>
-        <div class="page" style="border-color: midnightblue;">
+        <div class="page" style="border-color: darkgreen;">
           <div class="stackable grid">
             <div class="row">
-              <div class="three wide center aligned column">
+              <div class="five wide center aligned column">
                 <div class="avatar-wrapper avatar-box">
                   <object class="avatar" data="ryu_avatar.svg" role="img" aria-label="My profile picture"></object>
                 </div>
               </div>
-              <div class="thirteen wide column">
+              <div class="one wide column"></div>
+              <div class="ten wide column">
                 <div class="stackable grid">
                   <div class="sixteen wide column">
                     <h1 class="name">Ryu Hoshi (リュウ Ryū)</h1>
@@ -47,13 +113,21 @@
                     <div class="divider"></div>
                   </div>
                   <div class="sixteen wide column">
-                    <!-- Intro -->
+                    <h2>Résumé</h2>
+                    <p>― I do not compete with others, the only competition that challenges me is myself. As a fighter, friend and an employee I am known as contemplative, tortured and driven.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="sixteen wide column">
+                <div class="fat divider"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="ten wide column">
+                <div class="fat divider"></div>
                 <div class="fat divider"></div>
               </div>
             </div>
@@ -238,8 +312,28 @@
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="details">
+              <h3>ACHIEVEMENTS</h3>
+              <input type="checkbox" id="achievements">
+              <label for="achievements">all achievements</label>
+              <div>
+                <ul>
+                  <li>#1 in "Top 25 Street Fighter Characters" by IGN, who also called me "fancy", "icon" and "a testament to the virtue of simplicity" <g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">❤️</g-emoji></li>
+                  <li>#2 in "Top 20 Street Fighter Characters of All Time" by GameDaily, same council found me worth of #6 place in "Top 25 Capcom Characters of All Time", which I proudly share with my partner Ken</li>
+                  <li>I was named "5th Most Powerful Street Fighter Character" by Screen Rant-san</li>
+                  <li>#71 in "Top 100 Heroes of All Time" by UGO Networks, also recognized #2 in their list of "Top 50 Street Fighter Characters"</li>
+                  <li>In a survey of 4000 online matches for Super Street Fighter IV, I got to be the most popular character, with 16.6% of players choosing my side</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </article>
     </main>
+    <footer>
+      <em><strong class="footer_text">STOP COVID-19!</strong></em>
+    </footer>
+    <script></script>
   </body>
 </html>
